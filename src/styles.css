@@ -1,0 +1,101 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the body takes up the full viewport height */
+  }
+  
+  .app-container {
+    max-width: 600px;
+    width: 100%; /* Ensure it takes up the full width within the max-width */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Task form styles */
+  .task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .task-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .task-form button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .task-form button:hover {
+    background-color: #218838;
+  }
+  
+  /* Task list styles */
+  .task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #000;
+  }
+  
+  .task-item.completed {
+    background-color: #e0ffe0;
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .task-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .task-item button:first-of-type {
+    background-color: #ffc107;
+    color: #000;
+  }
+  
+  .task-item button:last-of-type {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .task-item button:hover {
+    opacity: 0.8;
+  }
